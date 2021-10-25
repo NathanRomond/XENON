@@ -100,11 +100,7 @@
 
         <div id="displaycircle">
             <?php
-            
-            function addTwo($num1, $num2) {
-                return $num1 + $num2;
-            }
-
+            include "addtwo.php";
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $numberOne = $_POST["number1"];
                 $numberTwo = $_POST["number2"];
