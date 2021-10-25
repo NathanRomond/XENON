@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Quiz 3</title>
+    <title>Quiz 4</title>
     <meta charset="utf-8">
 
     <style>
@@ -79,7 +79,7 @@
         <ul>
             <li><a href="index.php">Question 1</a></li>
             <li><a href="quiz3-2.php">Question 2</a></li>
-            <li><a href="quiz3.php">Question 3</a></li>
+            <li><a href="quiz4.php">Question 3</a></li>
         </ul>
     </nav>
     <main>
@@ -99,7 +99,7 @@
         </form>
 
         <div id="displaycircle">
-            <?php
+        <?php
             include "addtwo.php";
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $numberOne = $_POST["number1"];

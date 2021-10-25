@@ -1,14 +1,11 @@
 <?php
-    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-        $input = $_POST['leapyear'];
-        if (($input % 4) != 0) {
-            return false;
+
+    function leapYear($input) {
+        if((0 == $input % 4) & (0 != $input % 100) | (0 == $input % 400)) {
+            return TRUE;   
         }
-        else if (($input % 400) != 0){
-            return false;
-        }
-        else {
-            return true;
+        else {  
+            return FALSE;    
         }
     }
 ?>
