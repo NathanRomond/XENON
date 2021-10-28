@@ -78,7 +78,7 @@
     <nav>
         <ul>
             <li><a href="quiz4-1.php">Question 1</a></li>
-            <li><a href="quiz4-1.php">Question 2</a></li>
+            <li><a href="quiz4-2.php">Question 2</a></li>
             <li><a href="quiz4.php">Question 3</a></li>
         </ul>
     </nav>

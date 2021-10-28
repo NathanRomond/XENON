@@ -77,7 +77,7 @@
 <body>
     <nav>
         <ul>
-            <li><a href="index.php">Question 1</a></li>
+            <li><a href="quiz4-1.php">Question 1</a></li>
             <li><a href="quiz4-2.php">Question 2</a></li>
             <li><a href="quiz4.php">Question 3</a></li>
         </ul>
@@ -85,30 +85,18 @@
     <main>
         <header>
             <h1>
-                Question 1 by Robin Balatbat
+                Question 2 by Robin Balatbat
             </h1>
         </header>
-        <form method="post" action="quiz4-1.php">
-            <ul>
-                <label for="number1">Enter Number One: </label>
-                <input type="number" id="word" name="number1" required>
-                <label for="number2">Enter Number Two: </label>
-                <input type="number" id="word" name="number2" required>
-            </ul>
-            <input type="submit" value="Add Two">
-        </form>
 
         <div id="displaycircle">
         <?php
-            include "addtwo.php";
-            if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                $numberOne = $_POST["number1"];
-                $numberTwo = $_POST["number2"];
-
-                $newNum = addTwo($numberOne, $numberTwo);
-
-                echo "Your added numbers are: " .$newNum;
-            }
+            include "topStudent.php";
+            
+            $gpa = array('A' => 4.0, 'A-' => 3.7, 'B+' => 3.3, 'B' => 3.0, 'B-' => 2.7, 'C+' => 2.3, 'C' => 2.0, 'C-' => 1.7, 'D' => 1.0, 'F' => 0.0);
+            $class = array('Ann' => 'B', 'Hal' => 'D', 'Al' => 'B', 'Pam' => 'C+', 'Pat' => 'A-', 'Sam' => 'A-', 'Lee' => 'B', 'Ty' => 'B-');
+            $topStudent = topStudent($grades, $class);
+            echo "The top student is " .$topStudent;
             ?>
         </div>
     </main>
